@@ -15,7 +15,7 @@ def total_salary(path: str):
         return None, None
 
 
-total_sum, average_salary = total_salary("E:/Python/Homework_4/Alex Korp.txt")
+total_sum, average_salary = total_salary("path/to/salary_file.txt")
 if total_sum is not None and average_salary is not None:
     print(
         f"Загальна сума заробітної плати: {total_sum}, Середня заробітна плата: {average_salary}")

@@ -17,5 +17,5 @@ def get_cats_info(path: str):
         print(f"Сталася помилка: {e}")
 
 
-cats_info = get_cats_info("E:/Python/Homework_4/for_2.txt")
+cats_info = get_cats_info("path/to/cats_file.txt")
 print(cats_info)
