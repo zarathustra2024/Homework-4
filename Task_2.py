@@ -1,4 +1,6 @@
 from pathlib import Path
+
+
 def get_cats_info(path: str):
     cats_info = []
     try:
@@ -18,6 +20,8 @@ def get_cats_info(path: str):
         print(f"Сталася помилка: {e}")
 
 
-path = 'Data/cats_file.txt'
-cats_info = get_cats_info(path)
+relative_path = Path("Homework_4/cats_file.txt")
+absolute_path = relative_path.absolute()
+
+cats_info = get_cats_info(absolute_path)
 print(cats_info)
